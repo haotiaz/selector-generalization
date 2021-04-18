@@ -1,0 +1,30 @@
+{
+  "name": "electron_with_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./expressapp/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@medv/finder": "^2.0.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "electron": "^5.0.6",
+    "electron-prompt": "^1.6.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.6",
+    "morgan": "~1.9.1",
+    "open": "^6.4.0",
+    "server-destroy": "^1.0.1",
+    "uuid": "^3.3.2"
+  }
+}

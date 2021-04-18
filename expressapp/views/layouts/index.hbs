@@ -1,0 +1,138 @@
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <p>
+                        <input type="text" id="urlinput" placeholder="Link" autocomplete="off">
+                        <span onclick="frameUrl()" class="btn">Enter</span>
+                    </p>
+                    {{!-- <iframe src="https://www.twitter.com" id="webFrame"></iframe> --}}
+                    <webview id="webFrame" src="https://www.google.com/" style="display:inline-flex; width:640px; height:480px" nodeintegtration></webview>
+                </div>
+           </div>
+            <div class="col-4">
+                <div>Selector specification</div>
+                <form>
+                    <div class="spec-selection">
+                        <input class="spec-choice" type="radio" id="text" name="choice" value="text">
+                        <label for="text">Text</label><br>
+                        <div class="spec-detail" id="text-detail">
+                            <form>
+                                <input type="radio" id="equal-t" name="text" value="equal">
+                                <label for="equal-t">Equal</label><br>
+                                <input type="radio" id="greater-t" name="text" value="greater">
+                                <label for="greater-t">Greater than</label><br>
+                                <input type="radio" id="less-t" name="text" value="less">
+                                <label for="less=t">Less than</label><br>
+                                <input type="radio" id="occurance-t" name="text" value="occurance">
+                                <label for="occurance-t">Occurances Times</label><br>
+                                <input type="radio" id="begin-t" name="text" value="begin">
+                                <label for="begin-t">begin</label><br>
+                                <input type="radio" id="end-t" name="text" value="end">
+                                <label for="end-t">End</label><br>
+                                <input type="radio" id="format-t" name="text" value="format">
+                                <label for="format-t">Format</label><br>
+                                <input type="radio" id="customize-t" name="text" value="customize">
+                                <label for="customize-t">Customize</label><br>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="spec-selection">
+                        <input class="spec-choice" type="radio" id="color" name="choice" value="color">
+                        <label for="color">Color</label><br>
+                        <div class="spec-detail" id="color-detail">
+                            <form>
+                                <input type="radio" id="range" name="color" value="range">
+                                <label for="range">Range</label><br>
+                                <input type="radio" id="equal-c" name="color" value="equal">
+                                <label for="equal">Equal</label><br>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="spec-selection">
+                        <input class="spec-choice" type="radio" id="index" name="choice" value="index">
+                        <label for="index">Index</label><br>
+                        <div class="spec-detail" id="index-detail">
+                            <form>
+                                <input type="radio" id="first-i" name="index" value="first">
+                                <label for="first-i">First</label><br>
+                                <input type="radio" id="last-i" name="index" value="last">
+                                <label for="last-i">Last</label><br>
+                                <input type="radio" id="at-i" name="index" value="at">
+                                <label for="at-i">At</label><br>
+                                <input type="radio" id="range-i" name="index" value="range">
+                                <label for="range-i">Range</label><br>
+                                <input type="radio" id="customize-i" name="index" value="customize">
+                                <label for="customize-i">Customize</label><br>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="spec-selection">
+                        <input class="spec-choice" type="radio" id="size" name="choice" value="size">
+                        <label for="size">Size</label><br>
+                        <div class="spec-detail" id="size-detail">
+                            <form>
+                                <input type="radio" id="height" name="size" value="height">
+                                <label for="height">Height</label><br>
+                                <input type="radio" id="width" name="size" value="width">
+                                <label for="width">Width</label><br>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="spec-selection">
+                        <input class="spec-choice" type="radio" id="number" name="choice" value="number">
+                        <label for="number">Number</label><br>
+                        <div class="spec-detail" id="number-detail">
+                            <form>
+                                <input type="radio" id="smallest-n" name="number" value="smallest">
+                                <label for="smallest-n">Smallest</label><br>
+                                <input type="radio" id="greatest-n" name="number" value="greatest">
+                                <label for="greatest-n">Greatest</label><br>
+                                <input type="radio" id="equal-n" name="number" value="equal">
+                                <label for="equal-n">Equal</label><br>
+                                <input type="radio" id="range-n" name="number" value="range">
+                                <label for="range-n">Range</label><br>
+                                <input type="radio" id="customize-n" name="number" value="customize">
+                                <label for="customize-n">Customize</label><br>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="spec-selection">
+                        <input class="spec-choice" type="radio" id="date" name="choice" value="date">
+                        <label for="date">Date</label><br>
+                        <div class="spec-detail" id="date-detail">
+                            <form>
+                                <input type="radio" id="earlier-d" name="date" value="earlier">
+                                <label for="earlier-d">Earlier</label><br>
+                                <input type="radio" id="later-d" name="date" value="later">
+                                <label for="later-d">Later</label><br>
+                                <input type="radio" id="equal-d" name="date" value="equal">
+                                <label for="equal-d">Equal</label><br>
+                                <input type="radio" id="range-d" name="date" value="range">
+                                <label for="range-d">Range</label><br>
+                                <input type="radio" id="customize-d" name="date" value="customize">
+                                <label for="customize-d">Customize</label><br>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
+                
+
+                    
+                    
+                    
+                    <button class="btn btn-primary">Apply</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
